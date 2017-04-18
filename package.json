@@ -1,0 +1,25 @@
+{
+  "name": "hungry-dragon",
+  "version": "1.0.0",
+  "description": "A Hungry Dragon Game",
+  "scripts": {
+    "build": "node browserify.js > dist/bundle.js",
+    "serve": "node_modules/.bin/http-server -c-1"
+  },
+  "browserify-shim": {
+    "phaser": "global:Phaser",
+    "pixi": "global:PIXI"
+  },
+  "author": "Majirefy",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^14.3.0",
+    "browserify-shim": "^3.8.14",
+    "http-server": "^0.9.0",
+    "phaser-ce": "^2.7.6",
+    "tsify": "^3.0.1",
+    "tslint": "^5.1.0",
+    "typescript": "^2.2.2",
+    "webfontloader": "^1.6.27"
+  }
+}
